@@ -1,0 +1,1 @@
+Broken Access Control vulnerabilities can lead to unauthorized information disclosure, modification or destruction of all data, or performing a business function outside of the limits of the user. One of the examples is unrestricted file path access.
