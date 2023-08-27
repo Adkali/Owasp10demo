@@ -1,7 +1,7 @@
 # Exposure of Sensitive Information: Login Feedback Vulnerability
 source - > https://cwe.mitre.org/data/definitions/200.html
 ## Introduction
-
+While this can result from broken access controls, it's broader and can also result from other vulnerabilities or misconfigurations.
 In the web security, one crucial aspect often overlooked is the information revealed during the login process. While user-friendly error messages assist
 legitimate users, they might provide a good information to potential attackers. This write-scenario shows a simple impactful, illustrating the potential security concerns surrounding login feedback.
 
