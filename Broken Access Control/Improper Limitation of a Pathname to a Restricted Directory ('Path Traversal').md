@@ -24,3 +24,6 @@ Solutions:
 1. Always validate input: Ensure the input meets specific criteria before use.
 2. Limit access: Ensure users can only access the files they are authorized to.
 3. Avoid direct file paths: Don't use direct file paths in user-facing functions. Use identifiers and map those to actual file paths server-side.
+
+**Example**
+![Improper Limitation of a Pathname](https://github.com/Adkali/Owasp10demo/assets/90532971/787d882e-5788-4cdf-b933-e31c7beaf2ee)
