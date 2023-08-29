@@ -44,4 +44,43 @@ if (isValidUsername($username, $users)) {
 Vulnerability: The vulnerability lies in the granularity of the error messages provided during login attempts. In cases where the username does not exist, the message "Login Failed - unknown username" indicates to attackers that the username in question is invalid. Similarly, if an incorrect password is entered, the message "Login Failed - incorrect password" discloses the validity of the username. These specific error messages aid attackers in identifying valid usernames for potential brute-force attacks or targeted exploitation. To address this vulnerability, ensure that error messages are generic and do not disclose specific details about the authentication process. Maintain consistency in error messages regardless of the nature of the error. This approach prevents attackers from gaining insights into the authentication mechanism.
 
 ### Demo
-Soon!
+Note: code has been changed to make it more user-friendly keeping the same logic.
+
+```DEMO code:
+
+// Define a simple "database" of users to work with.
+$users = array(
+
+    'alice' => '123123',
+    'bob' => 'bob',
+    'adkali' => 'root'
+);
+
+// Get the username and the password from the POST request.
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+
+// Check if the username does not exist in the database.
+// If not, raise an eror saying so.
+
+if (!array_key_exists($username, $users)) {
+    echo "Login failed - Invalid username!";
+    exit;
+}
+
+// Check if the password entered maches to the username.
+// if the password does not exist, raise an error saying so.
+
+if ($users[$username] !== $password) {
+    echo "Login failed - Wrong password!";
+    exit;
+}
+
+// Success!
+
+echo "Login successful!";
+
+?>
+```
+https://github.com/Adkali/Owasp10demo/assets/90532971/d76386e8-11c2-466a-9a03-3ac75a9b6f55
