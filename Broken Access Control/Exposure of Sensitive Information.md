@@ -48,7 +48,14 @@ Note: code has been changed to make it more user-friendly keeping the same logic
 
 ```DEMO code:
 
-// Define a simple "database" of users to work with.
+<?php
+
+// NOTE: DO NOT! use this code as it is vulnerable and not secure!
+// This demo is for educational purposes only! and must not be used.
+// This kind of code can show the risk of exposure data ( sensitive information ). Let make a quick overview
+
+
+// Define a simple "database" of users to work with using array
 $users = array(
 
     'alice' => '123123',
@@ -56,21 +63,22 @@ $users = array(
     'adkali' => 'root'
 );
 
-// Get the username and the password from the POST request.
+// Get the username and the password from the POST request sent by the user when pressing the "submit" button
+
 $username = $_POST['username'];
 $password = $_POST['password'];
 
 
 // Check if the username does not exist in the database.
-// If not, raise an eror saying so.
+// If it is not, raise an eror saying so.
 
 if (!array_key_exists($username, $users)) {
     echo "Login failed - Invalid username!";
     exit;
 }
 
-// Check if the password entered maches to the username.
-// if the password does not exist, raise an error saying so.
+// Check if the password entered is matches to the username.
+// if it is not, raise an error saying so.
 
 if ($users[$username] !== $password) {
     echo "Login failed - Wrong password!";
