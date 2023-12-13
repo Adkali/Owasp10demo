@@ -1,1 +1,0 @@
-Security Misconfiguration is a critical issue identified in the OWASP Top 10, highlighting the risks associated with insecure application settings, configurations, and permissions. This category encompasses a broad range of vulnerabilities that stem from inadequate or improper security configurations
