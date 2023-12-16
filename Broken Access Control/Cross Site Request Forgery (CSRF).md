@@ -31,10 +31,11 @@ Now, The above code starts or resumes an existing session. It checks if there's 
 
 Now when user enter this URL and click on the 'Click Me!' button, he is actually sending a POST request to profile.php ( which he currently logged in).
 This Innocent form is designed in a way that changes the user's profile ( notice the hidden field ), and eventually trust the user's own authenticated session to do so.
-No other machanism are in place, which is a BAD things.
+No other machanism are in place, which is a BAD thing.
 
 ### Purpose
 The attack is aimed at demonstrating how an attacker can exploit a user's authenticated session to perform actions on their behalf, without their knowledge. By tricking the user into loading the attack.html, an attacker can change the user's email address.
 in real-world applications, a scenarios like changing passwords, emails, names and more are a real-mess when a web application does not protect agains CSRF attacks. For more, enter the <b>source</b> above.
+
 ![csrf-gif](https://github.com/Adkali/Owasp10demo/assets/90532971/2b9a2df1-a0c2-4ff9-a198-89c098276343)
 
