@@ -13,7 +13,7 @@ If the server allows the request, it responds with specific CORS headers (Access
 # Demo
 
 ```10.0.2.14 - > login page```<br>
-```/userinfo.php - > API of the uer after logged in```<br>
+```/userinfo.php - > API of the user after logged in```<br>
 ```/details - > request made holding sensitive info with JSON format.```<br>
 
 ![1](https://github.com/Adkali/Owasp10demo/assets/90532971/6096ef3e-b176-46d8-9828-40f9cecc270e)
