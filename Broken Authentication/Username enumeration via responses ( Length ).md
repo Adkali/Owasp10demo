@@ -1,4 +1,4 @@
-# User Enum From Response
+# Content length responses
 user enumeration via different responses can be a situation used and employed by cybersecurity professionals and also attackers to identify potential vulnerabilities in web applications if there's not any Mechanism that prevent it from us such as Rate-Limiting.
 Take a look at the video and notice the different responses when brute-force for usernames.
 
