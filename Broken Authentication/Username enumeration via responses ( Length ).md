@@ -13,4 +13,8 @@ When a web server responds to a request, it returns a response with a certain le
 5. - > Confirm Findings: Once you suspect you've identified valid usernames based on response length discrepancies, you can further confirm by attempting to log in with these usernames and observing the server's response.
 
 #### Video:
-soon ....
+
+
+https://github.com/Adkali/Owasp10demo/assets/90532971/5587042c-2e1b-4062-9873-fc4535cb077e
+
+
