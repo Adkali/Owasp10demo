@@ -17,7 +17,7 @@ This leads to sensitive information being stored in the cache and potentially be
 
 - Creds:`alice:123456`
 - Creds:`bob:112233`
-  #### Now When alice logs in to her profile, se sees some sensitive information that only see knows.
+  #### Now When alice logs in to her profile, she face to some sensitive information that only she knows.
   #### bob (attacker), create an account, and while testing the web appliation's behavior, notice that the web is vulnerable.
   #### Now bob wants to trick alice into clicking a nonexist path so the web server wil caches alice's sensitive data.
 
